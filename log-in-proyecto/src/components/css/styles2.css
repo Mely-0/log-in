@@ -1,24 +1,18 @@
-.cont-promax{
-width: 80%; 
-height: 50%;
-background-color: rgb(165, 237, 237);
-border-radius: 10px 10px;
-}
-.icono{
+.icono-1{
     color: rgb(125, 184, 235);
     width: 60px;
     height: 60px;
 }
-.header{
+.header-1{
     width: 100%;
     height: 20%;
     border-radius: 10px 10px 0px 0px;
 }
-.contenido{
+.contenido-1{
     width: 100%;
     height: 100%;
 }
-.formulario{
+.formulario-1{
     width: 100%;
     height: 80%;
     display: flex;
@@ -26,17 +20,17 @@ border-radius: 10px 10px;
     align-items: center;
     justify-content: center;
 }
-.opciones{
+.opciones-1{
     width: 90%;
     height: 20%;
 }
-.selecciona{
+.selecciona-1{
     height: 30%;
     width: 90%;
     background-color: rgba(240, 248, 255, 0.657);
     border-radius: 10px 10px;
 }
-.input{
+.input-1{
     width: 90%;
     height: 20%;
     display: flex;
@@ -44,14 +38,14 @@ border-radius: 10px 10px;
     justify-content: center;
     align-items: center;
 }
-.input-field{
+.input-field-1{
     background-color: rgba(240, 248, 255, 0.657);
     border-radius: 10px 10px;
     height: 30%;
     border: none;
     width: 90%;
 }
-.botones{
+.botones-1{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +54,7 @@ border-radius: 10px 10px;
     gap: 5px;
     border-radius: 10px 10px;
 }
-.btn-a{
+.btn-a-1{
     background-color: rgba(240, 248, 255, 0.907);
     border-radius: 5px 5px;
     width: 40%;

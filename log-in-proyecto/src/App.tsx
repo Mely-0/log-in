@@ -1,11 +1,13 @@
 import React from 'react';
-import { Indox } from './components/Indox'
+import { Index } from './components/Index'
 import './App.css';
+
 
 function App() {
   return (
     <div className="App">
-      <Indox/>
+      <Index/>
+      
     </div>
   );
 }
