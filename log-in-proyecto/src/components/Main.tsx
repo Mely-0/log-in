@@ -1,28 +1,40 @@
+import { useState } from "react";
 import { useEffect } from "react";
 import { FaExpeditedssl } from "react-icons/fa";
-
+import './css/styles.css';
 
 export const Main = () => {
     const handleSubmit = (e: any) => {
-        const data: any = [{
-            name: 'admin',
-            pass: '123456',
-            rol: 'admin'
+        let save: boolean= false;
+        
 
-        },
-        {
-            name: 'empleado',
-            pass: '123456',
-            rol: 'empleado'
-
-        }]
-        localStorage.setItem('user', JSON.stringify(data));
-        e.preventDefault()
-    }
-    useEffect(() => {
         const data = JSON.parse(localStorage.getItem('user') || '{}')
-        console.log(data);
-    }, [])
+        e.preventDefault()
+
+        const name:string = e.target.user.value;
+        console.log(name);
+
+        const password:string = e.target.pass.value;
+        console.log(name)
+
+        for(let i = 0; i < data.length; i++){
+            if(data[i].name == name && data[i].pass == password){
+            save= true;
+            
+
+                if(save && data[i].rol=== "empleado"){
+                    window.location.href = "/Enterprises";
+                    
+                } else{
+
+                    if(save && data[i].rol=== "admin"){
+                        window.location.href = "/Registrate";
+                    }
+                    
+                }
+            }
+        }
+}
 
     return (
         <div className='contenido'>

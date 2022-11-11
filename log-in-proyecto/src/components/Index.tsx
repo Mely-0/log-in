@@ -1,12 +1,13 @@
 
-import { Registrate } from './Registrate';
-import './css/styles.css'
+
 import './css/styles2.css'
+import { Main } from './Main';
+
 
 export const Index = () => {
 return (
     <div className='cont-promax'>
-    <Registrate/>
+    <Main/>
     </div>
 )
 } 

@@ -1,3 +1,9 @@
+.cont-promax{
+    width: 80%; 
+    height: 50%;
+    background-color: rgb(165, 237, 237);
+    border-radius: 10px 10px;
+    }
 .icono-1{
     color: rgb(125, 184, 235);
     width: 60px;
@@ -9,8 +15,10 @@
     border-radius: 10px 10px 0px 0px;
 }
 .contenido-1{
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 60%;
+    border-radius: 10px;
+    background-color: aquamarine;
 }
 .formulario-1{
     width: 100%;
@@ -60,4 +68,14 @@
     width: 40%;
     height: 30%;
     border: none;
+}
+
+.seleccionar{
+    margin-top: 10px;
+    width: 50%;
+    background-color: rgba(221, 244, 245, 0.924);
+    border-radius: 10px 10px;
+}
+.opcion{
+    background-color: rgba(236, 236, 236, 0.773);
 }
