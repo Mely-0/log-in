@@ -1,16 +1,22 @@
 import React from 'react'
 
 export const Enterprises = () => {
+    
+    // const data = JSON.parse(localStorage.getItem('user') || '{}')
+    // const seleccion =(()=>{
+
+    // // if(data.user == )
+    // // }
+    // )
 return (
 <div className='selectdiv'>
-<label>
+
     <select>
-        <option selected> Select Box </option>
-        <option>Option 1</option>
-        <option>Option 2</option>
-        <option>Last long option</option>
+        <option >Empresa-1</option>
+        <option>Empresa-2</option>
+        <option>Empresas-3</option>
     </select>
-</label>
+
 </div>
 )
 }

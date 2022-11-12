@@ -15,7 +15,7 @@ export const Main = () => {
         console.log(name);
 
         const password:string = e.target.pass.value;
-        console.log(name)
+        console.log(password)
 
         for(let i = 0; i < data.length; i++){
             if(data[i].name == name && data[i].pass == password){
@@ -27,7 +27,7 @@ export const Main = () => {
                     
                 } else{
 
-                    if(save && data[i].rol=== "admin"){
+                    if(save && data[i].rol=== "Admin"){
                         window.location.href = "/Registrate";
                     }
                     
