@@ -1,6 +1,4 @@
-import { useState } from "react";
-import { useEffect } from "react";
-import { FaExpeditedssl } from "react-icons/fa";
+
 import './css/styles.css';
 
 export const Main = () => {
@@ -22,40 +20,46 @@ export const Main = () => {
             save= true;
             
 
-                if(save && data[i].rol=== "empleado"){
-                    window.location.href = "/Enterprises";
-                    
-                } else{
-
-                    if(save && data[i].rol=== "Admin"){
-                        window.location.href = "/Registrate";
-                    }
-                    
-                }
+            if(save && data[i].rol=== "empleado"){
+                window.location.href = `/Enterprises/${data[i].name}`;
+                
+            }else if (save && data[i].rol=== "Administrador")
+            {
+                window.location.href = "/Registrate";
             }
+            else{
+
+                alert("Estre usuario no esta registrado")
+
+            }
+        }
         }
 }
 
     return (
         <div className='contenido'>
-            <div className="header">
-                < FaExpeditedssl className="icono" />
-            </div>
-            <form className="formulario" onSubmit={handleSubmit}>
-                <div className='input'>
-                    <label className='input-label'>Name</label>
-                    <input type="text" name='user' className='input-field' placeholder="Alexander Parkinson" />
-                </div>
-
-                <div className='input'>
-                    <label className='input-label'>Password</label>
-                    <input type="password" name='pass' className='input-field' />
-                </div>
-                <div className="botones">
-                    <button className="btn-a" type="submit">Acceder</button>
-                </div>
-            </form>
+        <div className="header">
         </div>
+        <div className="formu">
+            <div className="logo">
+            <h3>Login</h3>
+            <p className="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, numquam.</p>
+        </div>
+        <form className="formulario" onSubmit={handleSubmit}>
+
+            <div className='input'>
+                <input type="text" name='user' className='input-field' placeholder="Usuario" />
+            </div>
+
+            <div className='input'>
+                <input type="password" name='pass' className='input-field' placeholder="password" />
+            </div>
+            <div className="botones">
+                <button className="btn-a" type="submit">Acceder</button>
+            </div>
+        </form>
+    </div>
+    </div>
 
     )
 }

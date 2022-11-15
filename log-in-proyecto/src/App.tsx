@@ -11,7 +11,10 @@ function App() {
       <Routes>
       <Route path="/" element={<Index/>}></Route>
       <Route path="/Registrate" element={<Registrate/>}></Route>
-      <Route path="/Enterprises" element={<Enterprises/>}></Route>
+      <Route>
+        <Route path="/Enterprises" element={<Enterprises/>}></Route>
+        <Route path="/Enterprises/:name" element={<Enterprises/>}></Route>
+      </Route>
       </Routes>
     </div>
   );

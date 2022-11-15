@@ -1,0 +1,148 @@
+body,html{
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.comtenedor-promax{
+    width: 90%;
+    height: 70%;
+    background-color:rgb(230, 230, 230) ;
+    border-radius: 10px;
+}
+.header{
+    text-align: center;
+    width: 100%;
+    height: 15%;
+}
+.conversion{
+    width: 100%;
+    height: 70%;
+
+}
+.importe{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input-label{
+margin-right: 40%;
+font-size: 20px;
+}
+.input-field{
+    width: 60%;
+    height: 35%;
+    border: none;
+    border-radius: 10px;
+}
+
+.opciones{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.select{
+    width: 60%;
+    height: 35%;
+    border: none;
+    border-radius: 10px; 
+}
+.resultado{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.botones{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+.btn-a{
+    width: 30%;
+    height: 50%;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: rgb(102, 66, 212);
+}
+@media all and (min-width:800px){
+    .comtenedor-promax{
+        width: 80%;
+        height: 60%;
+        background-color:rgb(230, 230, 230) ;
+        border-radius: 10px;
+    }
+    .header{
+        text-align: center;
+        width: 100%;
+        height: 20%;
+    }
+    .conversion{
+        width: 100%;
+        height: 30%;
+        display: flex;
+    }
+    .importe{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .input-label{
+    margin-right: 40%;
+    font-size: 20px;
+    margin-left: 20%;
+    }
+    .input-field{
+        width: 60%;
+        height: 35%;
+        border: none;
+        border-radius: 10px;
+    }
+    .resultado{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .opciones{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .select{
+        width: 60%;
+        height: 35%;
+        border: none;
+        border-radius: 10px; 
+    }
+    .botones{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+    }
+    .btn-a{
+        width: 20%;
+        height: 40%;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        background-color: rgb(102, 66, 212);
+    }
+}

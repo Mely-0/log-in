@@ -1,81 +1,255 @@
 .cont-promax{
-    width: 80%; 
-    height: 50%;
-    background-color: rgb(165, 237, 237);
-    border-radius: 10px 10px;
-    }
-.icono-1{
-    color: rgb(125, 184, 235);
-    width: 60px;
-    height: 60px;
-}
-.header-1{
     width: 100%;
-    height: 20%;
-    border-radius: 10px 10px 0px 0px;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .contenido-1{
     width: 80%;
-    height: 60%;
+    height: 50%;
+    background-color:  rgb(230, 230, 230);
     border-radius: 10px;
-    background-color: aquamarine;
+}
+.icono-1{
+width: 60px;
+height: 60px;
+}
+.logo-1{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.parrafo-1{
+    text-align: center;
+}
+.formu-1{
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .formulario-1{
-    width: 100%;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.opciones-1{
-    width: 90%;
-    height: 20%;
-}
-.selecciona-1{
-    height: 30%;
-    width: 90%;
-    background-color: rgba(240, 248, 255, 0.657);
-    border-radius: 10px 10px;
+    width: 80%;
+    height: 70%;
 }
 .input-1{
-    width: 90%;
-    height: 20%;
+    width: 100%;
+    height: 20%; 
+    overflow: hidden;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items:center ;
 }
 .input-field-1{
-    background-color: rgba(240, 248, 255, 0.657);
-    border-radius: 10px 10px;
-    height: 30%;
-    border: none;
-    width: 90%;
+        width: 80%;
+        height: 40%;
+        border: none;
+        border-radius: 15px;
 }
-.botones-1{
+.input-check-1{
+    width: 80%;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 10%;
+}
+.check-box-1{
+    width: 100%;
+    height: 35%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 20%;
-    width: 80%;
-    gap: 5px;
-    border-radius: 10px 10px;
+    align-items: center;   
+}
+@media (Hover:hover){
+    .check-box:hover{
+        background-color: rgb(102, 66, 212);
+    }
+}
+.botones-1{
+    margin-top: 20px;
+    width: 100%;
+    height: 15%; 
+    display: flex;
+    justify-content: center;
+    align-items:center ;  
 }
 .btn-a-1{
-    background-color: rgba(240, 248, 255, 0.907);
-    border-radius: 5px 5px;
     width: 40%;
-    height: 30%;
+    height: 60%;
     border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(102, 66, 212);
 }
 
-.seleccionar{
-    margin-top: 10px;
-    width: 50%;
-    background-color: rgba(221, 244, 245, 0.924);
-    border-radius: 10px 10px;
+@media all and (min-width:800px){
+    html,body{
+        background-color: rgb(249, 249, 249);
+    }
+    .contenido-1{
+        width: 60%;
+        height: 60%;
+        background-color: rgb(230, 230, 230);
+        display: flex;
+
+    }
+    .header-1{
+        width: 40%;
+        height: 100%;
+        background-image: url(/src/components/img/esta.jpg) ;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        border-radius: 10px 0px 0px 10px;
+    } 
+    .icono-1{
+    width: 60px;
+    height: 60px;
+    }
+    .logo-1{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    }
+    .parrafo-1{
+        text-align: center;
+    }
+    .formu-1{
+        width: 60%;
+        height: 100%; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .formulario-1{
+        width: 80%;
+        height:80%;
+    
+    }
+
+    .input-1{
+        width: 100%;
+        height: 15%; 
+        display: flex;
+        align-items:center ;
+        flex-direction: column;
+    }
+    .input-field-1{
+        width: 80%;
+        height: 50%;
+        border: none;
+        border-radius: 15px;
+    }
+    .input-check-1{
+        width: 300px;
+        margin: 20px auto;
+        border-radius: 10px;
+    }
+    .check-box-1{
+        width: 100%;
+        height: 35%;
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+    }
+    .botones-1{
+        margin-top: 20px;
+        width: 100%;
+        height: 20%; 
+        display: flex;
+        justify-content: center;
+        align-items:center ;  
+    }
+    .btn-a-1{
+        width: 60%;
+        height: 40%;
+        border: none;
+        border-radius: 10px;
+        background-color: rgb(102, 66, 212);
+    }
 }
-.opcion{
-    background-color: rgba(236, 236, 236, 0.773);
+@media all and (min-width:1280px){
+    html,body{
+        background-color: rgb(249, 249, 249);
+    }
+    .contenido-1{
+        width: 50%;
+        height: 60%;
+        background-color: rgb(230, 230, 230);
+        display: flex;
+
+    }
+    .header-1{
+        width: 40%;
+        height: 100%;
+        background-image: url(/src/components/img/esta.jpg) ;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        border-radius: 10px 0px 0px 10px;
+    } 
+    .icono-1{
+    width: 60px;
+    height: 60px;
+    }
+    .logo-1{
+        width: 80%;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    }
+    .parrafo-1{
+        text-align: center;
+    }
+
+    .input-1{
+        width: 100%;
+        height: 15%; 
+        display: flex;
+        align-items:center ;
+        flex-direction: column;
+    }
+    .input-field-1{
+        width: 80%;
+        height: 55%;
+        border: none;
+        border-radius: 15px;
+    }
+    .input-check-1{
+        width:300px;
+        margin: 20px auto;
+        border-radius: 10px;
+    }
+    .check-box-1{
+        width: 100%;
+        height: 35%;
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+        border-radius: 10px;
+    }
+    .botones-1{
+        margin-top: 20px;
+        width: 100%;
+        height: 20%; 
+        display: flex;
+        justify-content: center;
+        align-items:center ;  
+    }
+    .btn-a-1{
+        width: 60%;
+        height: 40%;
+        border: none;
+        border-radius: 10px;
+        background-color: rgb(102, 66, 212);
+    }
 }
